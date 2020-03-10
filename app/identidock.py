@@ -3,6 +3,8 @@ import requests
 import hashlib
 import redis
 import html
+import os
+import date
 
 app = Flask(__name__)
 cache = redis.StrictRedis ( host='redis', port=6379, db=0 )

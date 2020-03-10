@@ -7,6 +7,7 @@ COPY app /app
 COPY cmd.sh /
 
 EXPOSE 9090 9191
+EXPOSE 80
 USER uwsgi
 
 CMD ["/cmd.sh"]
